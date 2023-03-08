@@ -43,7 +43,7 @@ func init() {
 	// showRbacCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 	clusterContext := ""
 	clusterScope := ""
-	showRbacCmd.Flags().StringVarP(&clusterContext, "cluster-context", "c", "", "Use `kubectl config get-context` to determine cluster context")
+	showRbacCmd.Flags().StringVarP(&clusterContext, "cluster-context", "c", "", "Use kubectl config get-context to determine cluster context")
 	showRbacCmd.Flags().StringVarP(&clusterScope, "cluster-scope", "s", "", "Scope of Kubernetes -- namespace, cluster, all-clusters")
 
 }
